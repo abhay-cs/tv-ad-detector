@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 app = Flask(__name__)
-CORS(app) 
+CORS(app)
 
 # Configure upload folder
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'uploads')
@@ -97,4 +97,4 @@ def health_check():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5500)

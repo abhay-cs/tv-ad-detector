@@ -41,7 +41,7 @@ const VideoUploader = () => {
         setLoading(true); // Set loading state to true
 
         try {
-            const response = await fetch('http://localhost:5000/api/analyze', {
+            const response = await fetch('http://localhost:5500/api/analyze', {
                 method: 'POST',
                 body: formData,
             });
