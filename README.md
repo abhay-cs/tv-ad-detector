@@ -1,6 +1,7 @@
 # TV Ad Detector 📺✨
 
 <img src="assets/img4.png" alt="TV-AD-Detector" width="600">
+
 ## 🚀 About the Project
 
 TV Ad Detector is a powerful tool that uses computer vision techniques to identify advertisement frames in video content. With a backend built using **Flask**, **Gunicorn**, and **OpenCV**, and a modern **React**-based frontend, this project provides an efficient solution to distinguish ads from non-ad video segments using **Mean Squared Error (MSE)** as the detection mechanism.
