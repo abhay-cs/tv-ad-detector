@@ -1,7 +1,6 @@
 # TV Ad Detector 📺✨
 
-![TV Ad Detector](https://your-image-link-here.com) <!-- Replace with your image link -->
-
+<img src="assets/img4.png" alt="TV-AD-Detector" width="600">
 ## 🚀 About the Project
 
 TV Ad Detector is a powerful tool that uses computer vision techniques to identify advertisement frames in video content. With a backend built using **Flask**, **Gunicorn**, and **OpenCV**, and a modern **React**-based frontend, this project provides an efficient solution to distinguish ads from non-ad video segments using **Mean Squared Error (MSE)** as the detection mechanism.
@@ -19,28 +18,12 @@ TV Ad Detector is a powerful tool that uses computer vision techniques to identi
 Here are some snapshots of the TV Ad Detector in action:
 
 ### Home Page
-![Home Page](https://your-image-link-here.com) <!-- Replace with your image link -->
+
+<img src="assets/img1.png" alt="Sample Graph" width="600">
 
 ### Ad Detection Results
-![Detection Results](https://your-image-link-here.com) <!-- Replace with your image link -->
 
-## 🏗️ Project Structure
-
-```
-tv-ad-detector/
-├── backend/
-│   ├── app.py            # Flask app entry point
-│   ├── detector.py       # Ad detection logic using OpenCV and MSE
-│   ├── requirements.txt  # Backend dependencies
-│   ├── wsgi.py           # Gunicorn WSGI entry point
-├── frontend/
-│   ├── src/
-│   │   ├── App.js        # React app main component
-│   │   ├── components/   # UI components
-│   ├── public/           # Static assets
-│   ├── package.json      # Frontend dependencies
-├── README.md             # Project documentation
-```
+<img src="assets/img3.png" alt="Detection Graph" width="600">
 
 ## 🧑‍💻 Technologies Used
 
@@ -93,15 +76,28 @@ Ensure you have the following installed:
 4. **Access the Application**:  
    Open your browser and navigate to `http://localhost:3000`.
 
-## 🔍 Examples
+### 📊 Test Data and Results
 
-Upload a video file and see the detected ad frames! Check out the examples below:
+The **TV Ad Detector** was tested using a video of an **NBA game** with advertisements stitched between game segments. The video was processed frame by frame using **Mean Squared Error (MSE)** to compare consecutive frames and detect significant differences that typically indicate ad transitions.
 
-![Example Detection](https://your-image-link-here.com) <!-- Replace with your image link -->
+#### Visualization of Results
+
+The detection results are plotted as a graph, where **peaks represent frames with ads**. These peaks correspond to the abrupt changes in content when ads are introduced into the video. While the graph provides a clear indication of ad positions, the detection logic is currently in its basic form and requires further tuning for higher accuracy and robustness.
+
+- **Current Limitations**:  
+  - The algorithm may miss subtle ad transitions or falsely detect non-ads in certain scenarios.  
+  - Optimizing parameters and integrating additional heuristics or machine learning models can improve performance.
+
+- **Future Work**:  
+  - Enhance the MSE thresholding to adapt dynamically based on video characteristics.  
+  - Incorporate temporal analysis to improve accuracy in detecting continuous ad segments.
+
+#### Sample Output
+
+Below is a graph from the NBA game test data, where peaks signify the frames identified as advertisements:  
+<img src="assets/img4.png" alt="Sample Graph" width="600">
 
 
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Despite the need for further refinement, the project demonstrates the feasibility of detecting advertisements in video content with relatively simple computer vision techniques.
 
 ---
